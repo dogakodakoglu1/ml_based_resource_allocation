@@ -56,10 +56,22 @@ The ML model demonstrates:
 
 To use the system, place graph datasets (in .txt edge list format) in the `data/raw/` directory. The tool automatically evaluates graph properties and selects the most suitable test configurations.
 
-## Output 
+## Output / Artifacts
 
-Results are stored in:
-- `results/enhanced_baseline/` - Files from experiments
-- `results/models/` - Saved trained ML models
-- `results/visualizations/` - Charts showcasing performance
-- `results/scheduler_comparison/` - Analysis of various schedulers
+All generated artifacts are currently stored in the **repository root**:
+
+- **Experiment outputs**
+  - `baseline_results.csv`
+  - `scheduler_comparison_results.csv`
+
+- **Saved model**
+  - `xgboost_model_deadline_aware.joblib`
+
+- **Figures / charts**
+  - `baseline_overview.png`
+  - `comprehensive_analysis.png`
+  - `feature_correlation_analysis.png`
+  - `ml_model_performance.png`
+  - `model_performance.png`
+  - `optimization_results.png`
+  - `scheduler_comparison.png`
